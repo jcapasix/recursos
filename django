@@ -1,0 +1,98 @@
+						DJANGO
+
+$ django-admin.py startproject _NombreDeTuProyecto_
+$ python manage.py runserver
+$ python manage.py startapp _NombreDeLaApp_
+
+//panel de administracion 
+
+se obian desde la vercion actual solo se registran los modelos
+y luego se hace un syndb
+
+---------------------------------------------------------------------------
+MODELOS:
+
+depues de crear los modelos se va a registrarlos en el admin.py 
+luego se hace un syncdb
+
+, si no se visializan los modelos revisas que la app que emos creado este 
+registrada en INSTALLED_APPS
+
+
+---------------------------------------------------------------------------
+trabajar dajango con MYSQL
+
+primero instalar mysql:
+$ sudo apt-get install mysql-server
+$ mysql -u root -p
+
+
+luego intalar:
+$ sudo apt-get install python-dev
+
+luego en el entorno virtual se instala el conector:
+$ pip install mysql-python
+
+configuracion:
+
+DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.mysql',
+        #'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+        'USER':'root',
+        'NAME': 'controluntdb',
+        'PASSWORD': 'password',
+        'HOST':'',
+        'PORT':'',
+    }
+}
+
+---------------------------------------------------------------------------
+
+SOUTH
+
+en el entorno virtual intalarmo south:
+pip install south
+
+luego la instalarmos en install_app
+
+para la primera migracion utilizamos:
+
+
+este es el que vale 
+
+$ ./manage.py schemamigration --initial webapp
+$ ./manage.py migrate --fake webapp
+$ ./manage.py schemamigration --auto webapp
+$ ./manage.py migrate webapp
+
+
+---------------------------------------------------------------------------
+
+PostgreSQL
+
+- actualizamos paquetes en linux
+sudo apt-get update
+sudo apt-get upgrade
+
+$ sudo apt-get install libpq-dev python-dev
+$ sudo apt-get install postgresql postgresql-contrib
+$ sudo apt-get install nginx
+
+https://www.digitalocean.com/community/tutorials/how-to-install-and-configure-django-with-postgres-nginx-and-gunicorn
+https://www.digitalocean.com/community/tutorials/how-to-install-and-configure-django-with-postgres-nginx-and-gunicorn
+configurar postgres:
+http://pgsqltutorial.readthedocs.org/en/latest/part_i/installation.html
+$ sudo -u postgres psql postgres
+postgres=# \password postgres
+postgres=# \password postgres
+Ingrese la nueva contraseña:
+Ingrésela nuevamente:
+postgres=# \q
+---------------------------------------------------------------------------
+
+
+tipos de datos:
+
+http://www.maestrosdelweb.com/editorial/curso-django-el-modelo-de-datos/
+

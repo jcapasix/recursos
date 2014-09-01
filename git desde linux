@@ -1,0 +1,70 @@
+instalando y configurando git
+---------------------------------------------------------------
+
+Git :
+
+- sudo apt-get install git
+- sudo apt-get install git-core
+
+---------------------------------------------------------------
+configuramos el usuario y correo que utilizaremos desde el computador
+
+git config --global user.name "Jcapas" 
+git config --global user.email "xxxxxx@xxxx.com"
+------------------------------------------------------------------------------------------------------------------------------
+luego generamos una llave SSH para poder conectarnos remotamente sin tener que identificarnos cada ves que queramos mandar un commit por ejemplo, esta la creamos de la siguiente manera:
+
+
+desde el terminal:
+
+- ssh-keygen
+
+luego que tenemos la llave:
+
+- cat /root/.ssh/id_rsa.pub (copiamos todo el contenido que viene a ser la llave ssh)
+
+ver si tenemos claves ssh en el computador:
+
+- ls -al ~/.ssh
+------------------------------------------------------------------------------------------------------------------------------
+ver de que manera nos estamos conectando al servidor 
+- git remote -v
+------------------------------------------------------------------------------------------------------------------------------
+cambiar remote 
+
+http://andersonleeb.com/blog/changing-git-remote-origin
+
+paginas de ayuda:
+https://help.github.com/articles/pushing-to-a-remote
+http://stackoverflow.com/questions/10909221/why-is-github-asking-for-username-password-when-following-the-instructions-on-sc
+
+------------------------------------------------------------------------------------------------------------------------------
+
+ejemplo mandando un primer commit desde terminal ya configurado la llave ssh
+
+# en la máquina de John
+$ cd myproject
+$ git init
+$ git add .
+$ git commit -m 'initial commit'
+$ git remote add origin git@gitserver:/opt/git/project.git
+$ git push origin master
+
+------------------------------------------------------------------------------------------------------------------------------
+Create a new repository on the command line
+
+touch README.md
+git init
+git add README.md
+git commit -m "first commit"
+git remote add origin git@github.com:akatsukidev/controlunt.git
+git push -u origin master
+Push an existing repository from the command line
+
+git remote add origin git@github.com:akatsukidev/controlunt.git
+git push -u origin master
+Import code from an old repository
+
+You can initialize this repository with code from a Subversion, Mercurial, or TFS project.
+
+

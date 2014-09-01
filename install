@@ -1,0 +1,73 @@
+Instalando Aplicaciones en linux mint :D
+--------------------------------------------------------------------
+Git :
+
+	- sudo apt-get install git
+	- sudo apt-get install git-core
+
+--------------------------------------------------------------------
+
+Django:
+	- sudo apt-get install python-setuptools
+	- sudo easy_install pip
+	- pip install virtualenv
+		virtualenv acpop
+		source acpop/bin/activate
+		pip install django 
+	
+	- pip install djangorestframework
+
+	- pip install gunicorn
+
+Intalando librerias en Django:
+
+en linux mint :
+- pip install PIL
+- pip install PIL --allow-external PIL --allow-unverified PIL
+
+si no funciona, correr el siguiente codigo:
+
+sudo apt-get install build-essential autoconf libtool pkg-config python-opengl python-imaging python-pyrex python-pyside.qtopengl idle-python2.7 qt4-dev-tools qt4-designer libqtgui4 libqtcore4 libqt4-xml libqt4-test libqt4-script libqt4-network libqt4-dbus python-qt4 python-qt4-gl libgle3 python-dev
+
+* recordar que para instalarlo en un virtualenv no poner sudo
+
+
+--------------------------------------------------------------------
+
+
+en heroku si nos da error por la clave publica:
+
+heroku keys:add ~/.ssh/id_rsa.pub
+
+
+--------------------------------------------------------------------
+instalar jdk & NetBeans
+
+chmod +x jdk-7u60-nb-8-linux-x64.sh
+sh ./jdk-7u60-nb-8-linux-x64.sh
+
+--------------------------------------------------------------------
+
+sudo apt-get install mysql-server
+
+mysql -u root -p
+
+
+--------------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

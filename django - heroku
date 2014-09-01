@@ -1,0 +1,52 @@
+----------------------------------------------------------------------------------------------------------							
+Django - Heroku
+----------------------------------------------------------------------------------------------------------
+$ mkdir django-heroku && cd django-heroku 
+$ virtualenv venv --distribute 
+$ source venv/bin/activate
+$ pip install django-toolbelt
+	$ pip install django
+	$ pip install Gunicorn
+	$ pip install dj-database-url
+	$ pip install dj-static
+----------------------------------------------------------------------------------------------------------
+$ django-admin.py startproject hellodjango 
+----------------------------------------------------------------------------------------------------------
+*Procfile (archivo nesesario para trabajar con heroku)
+web: gunicorn hellodjango.wsgi
+----------------------------------------------------------------------------------------------------------
+$ foreman start
+----------------------------------------------------------------------------------------------------------
+Definiendo las dependencias con Pip
+
+$ pip freeze 
+en requirements.txt va lo que sale en pip freeze
+----------------------------------------------------------------------------------------------------------
+$ touch .gitignore
+aqui ira lo siguiente:
+venv
+*.pyc
+staticfiles
+----------------------------------------------------------------------------------------------------------
+Ahora trabajamos con git para desplegar la app en heroku
+
+$ git init 
+Initialized empty Git repository in /home/amatellanes/djangoheroku/.git/ 
+ 
+$ git add . 
+ 
+$ git commit -m 'initial commit'
+
+$ heroku create
+
+$ git push heroku master
+----------------------------------------------------------------------------------------------------------
+
+
+mas informacion en :
+
+http://amatellanes.wordpress.com/2014/02/25/django-heroku-desplegando-una-aplicacion-django-en-heroku/
+
+https://devcenter.heroku.com/articles/git
+
+	
