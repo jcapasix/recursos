@@ -55,6 +55,15 @@ mysql -u root -p
 
 --------------------------------------------------------------------
 
+Install Spotify in Ubuntu 14.04 & Linux Mint
+
+sudo sh -c 'echo "deb http://repository.spotify.com stable non-free" >> /etc/
+
+sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys 94558F59
+
+sudo apt-get update
+sudo apt-get install spotify-client
+
 
 
 
