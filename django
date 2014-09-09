@@ -90,9 +90,21 @@ Ingrese la nueva contraseña:
 Ingrésela nuevamente:
 postgres=# \q
 ---------------------------------------------------------------------------
-
-
 tipos de datos:
 
 http://www.maestrosdelweb.com/editorial/curso-django-el-modelo-de-datos/
+
+---------------------------------------------------------------------------
+
+recursos:
+django
+http://django-book.blogspot.com/2012/11/realizando-consultas-una-vez-que-hayas.html
+http://django-book.blogspot.com/2012/06/capitulo-5-interactuar-con-una-base-de.html
+https://docs.djangoproject.com/en/dev/ref/models/querysets/
+python:
+http://es.diveintopython.net/odbchelper_list.html
+http://www.mclibre.org/consultar/python/lecciones/python_listas.html
+
+
+
 
