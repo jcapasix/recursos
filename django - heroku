@@ -9,6 +9,8 @@ $ pip install django-toolbelt
 	$ pip install Gunicorn
 	$ pip install dj-database-url
 	$ pip install dj-static
+
+pip install django-grappelli
 ----------------------------------------------------------------------------------------------------------
 $ django-admin.py startproject hellodjango 
 ----------------------------------------------------------------------------------------------------------

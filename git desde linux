@@ -61,6 +61,9 @@ git remote add origin git@github.com:akatsukidev/controlunt.git
 git push -u origin master
 Push an existing repository from the command line
 
+eliminar el REMOTE
+$ git remote rm origin
+
 git remote add origin git@github.com:akatsukidev/controlunt.git
 git push -u origin master
 Import code from an old repository
