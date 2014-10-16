@@ -6,6 +6,7 @@ $ virtualenv venv --distribute
 $ source venv/bin/activate
 $ pip install django-toolbelt
 	$ pip install django
+	$ pip install Django==1.6.2
 	$ pip install Gunicorn
 	$ pip install dj-database-url
 	$ pip install dj-static
@@ -42,6 +43,11 @@ $ git commit -m 'initial commit'
 $ heroku create
 
 $ git push heroku master
+
+
+
+$ heroku git:remote -a controlunt
+Git remote heroku added.
 ----------------------------------------------------------------------------------------------------------
 
 
