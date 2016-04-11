@@ -1,0 +1,29 @@
+apt-get update
+apt-get upgrade
+
+apt-get install python-virtualenv
+
+cd /var
+mkdir www
+ virtualenv vcapuly
+
+ sudo apt-get install git-all
+
+ nano bin/gunicorn_start
+
+ chmod u+x bin/gunicorn_start
+
+
+ apt-get install supervisor
+nano /etc/supervisor/conf.d/capuly.conf
+ mkdir /var/www/vcapuly/logs
+ touch /var/www/vcapuly/logs/gunicorn_supervisor.log
+ supervisorctl reread
+ supervisorctl update
+
+
+
+ apt-get install nginx
+ service nginx start
+ nano /etc/nginx/sites-available/capuly
+ ln -s /etc/nginx/sites-available/capuly /etc/nginx/sites-enabled/capuly
