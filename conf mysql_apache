@@ -1,0 +1,12 @@
+http://jason.pureconcepts.net/2014/11/install-apache-php-mysql-mac-os-x-yosemite/
+#configuracion de Mysql
+
+nano ~/.bash_profile
+export PATH=${PATH}:/usr/local/mysql/bin/
+mysql> SET PASSWORD = PASSWORD('your_new_password');
+
+#Apache
+apachectl start
+apachectl stop
+apachectl restart
+
