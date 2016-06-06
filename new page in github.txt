@@ -1,0 +1,11 @@
+git checkout --orphan gh-pages
+
+git add .
+git commit -a -m “Primer Commit con archivos de la pagina”
+git push origin gh-pages
+
+
+
+git rm -rf 'README.md' 
+git commit -a -m "Eliminando README.md"
+git push origin gh-pages

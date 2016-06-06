@@ -73,3 +73,8 @@ Import code from an old repository
 You can initialize this repository with code from a Subversion, Mercurial, or TFS project.
 
 
+#config git de manera local
+git config user.name "jordan.capa"
+git config user.email "jordan.capa@ibusplus.com"
+
+
